@@ -37,3 +37,11 @@ function changerStyle(style) {
     titleElement.style.fontStyle = style;
     paragraphElement.style.fontStyle = style;
 }
+
+function printPage() {
+    // Ouvrir la page d'impression sans le menu de droite
+    window.open('', '_blank', 'toolbar=0,location=0,menubar=0');
+
+    // Imprimer la page courante
+    window.print();
+  }
