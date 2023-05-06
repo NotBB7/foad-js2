@@ -39,9 +39,8 @@ function changerStyle(style) {
 }
 
 function printPage() {
-    // Ouvrir la page d'impression sans le menu de droite
-    window.open('', '_blank', 'toolbar=0,location=0,menubar=0');
-
-    // Imprimer la page courante
+    var rightSection = document.getElementById("right");
+    rightSection.classList.add("hidden");
     window.print();
+    rightSection.classList.remove("hidden");
   }
