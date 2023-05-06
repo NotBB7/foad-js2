@@ -8,8 +8,8 @@ body {
 
 #container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     max-width: 1200px;
     width: 100%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -61,12 +61,13 @@ body {
 }
 
 #right form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 10px;
 }
 
 #right label {
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
 }
 
 #right input[type="radio"] {
@@ -89,11 +90,13 @@ body {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 #right button:hover {
     background-color: #45a049;
 }
+
 .hidden {
     display: none;
 }
