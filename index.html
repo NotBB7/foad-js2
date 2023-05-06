@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOAD 2</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+
+
+    <div id="container">
+        <div id="left">
+            <h2 id="title">Le Havre CITY</h2>
+            <img id="image" src="assets/image/le havre.jpg" alt="Image 1">
+            <p id="paragraph">Trop facile</p>
+        </div>
+        <div id="right">
+            <form id="form">
+                <input type="text" id="input" placeholder="Nouveau titre">
+                <br><br>
+                <textarea id="textarea" placeholder="Nouveau paragraphe"></textarea>
+                <br><br>
+                <button type="button" onclick="changerImage(0)">Montagne</button>
+                <button type="button" onclick="changerImage(1)">Ocean</button>
+                <button type="button" onclick="changerImage(2)">Volcan</button>
+                <br><br>
+                <input type="radio" name="font" value="Arial" onclick="changerPolice(this.value)" checked> Arial
+                <input type="radio" name="font" value="Verdana" onclick="changerPolice(this.value)"> Verdana
+                <input type="radio" name="font" value="Courier" onclick="changerPolice(this.value)"> Courier
+                <br><br>
+                <input type="color" id="colorPicker" onchange="changerCouleur(this.value)">
+                <br><br>
+                <select onchange="changerStyle(this.value)">
+                    <option value="normal">Normal</option>
+                    <option value="italic">Italic</option>
+                    <option value="bold">Bold</option>
+                    <option value="underline">Underline</option>
+                </select>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
